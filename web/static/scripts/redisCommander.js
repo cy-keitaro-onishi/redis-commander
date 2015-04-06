@@ -41,7 +41,7 @@ function loadTree () {
                   if (node !== -1) {
                     var path = getFullKeyPath(node);
                     var root = getRootConnection(node);
-                    return '/apiv1/keystree/' + encodeURIComponent(root) + '/' + encodeURIComponent(path) + '?absolute=false';
+                    return '/apiv1/keystree/' + encodeURIComponent(root) + '/' + encodeURIComponent(path) + $('#redisKeyName').val() + '?absolute=false';
                   }
                   var root = getRootConnection(node);
                   return '/apiv1/keystree/' + encodeURIComponent(root);

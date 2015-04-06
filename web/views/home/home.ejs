@@ -1,8 +1,12 @@
 <div id="app-container">
   <div>
     <div id="sideBar">
+      <div>
+        <br>
+        <input type="text" id="redisKeyName" placeholder="search key name here" value="hogekey">
+      </div>
       <div id="keyTreeActions">
-        <button class="btn btn-success btn-mini" onclick="refreshTree()"><b class="icon-refresh icon-white"></b> Refresh</button>
+        <button class="btn btn-success btn-mini" onclick="loadTree()"><b class="icon-refresh icon-white"></b> Refresh</button>
         <button class="btn btn-mini" data-toggle="modal" href="#redisCommandsModal"><b class="icon-info-sign"></b> Commands</button>
         <div class="btn-group">
           <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">
